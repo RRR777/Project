@@ -1,0 +1,38 @@
+#reminder {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a.login {
+    color: #F4C059;
+    text-decoration: underline;
+}
+
+a.register {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-border {
+    border-top: none !important;
+    border-right: 5px solid #2880B9 !important;
+    border-bottom: 5px solid #2880B9 !important;
+    border-left: 5px solid #2880B9 !important;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+}
+
+.form-control.custom {
+    background-color: #ECF0F1;
+    border: 2px solid #CAC9C9;
+}
+
+.form-control.custom::placeholder {
+    color: #CAC9C9;
+}
+
+h3 {
+    color: #514D46;
+}

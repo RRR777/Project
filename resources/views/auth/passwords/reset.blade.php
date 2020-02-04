@@ -5,9 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
-
                 <div class="card-body">
+                    <h3 class="card-title text-center font-weight-bold">{{ __('Reset Password') }}</h3>
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
@@ -17,7 +16,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+                                <input id="email" type="email" class="form-control custom @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus placeholder="Enter e-mail address">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
